@@ -28,16 +28,6 @@ for part in a ab;do
 					apps_script='$(call inherit-product, device/phh/treble/gapps.mk)'
 					apps_name="with GApps"
 				fi
-				if [ "$apps" == "gapps-go" ];then
-					apps_suffix="o"
-					apps_script='$(call inherit-product, device/phh/treble/gapps-go.mk)'
-					apps_name="Go"
-				fi
-				if [ "$apps" == "foss" ];then
-					apps_suffix="f"
-					apps_script='$(call inherit-product, vendor/foss/foss.mk)'
-					apps_name="with FOSS apps"
-				fi
 				if [ "$apps" == "vanilla" ];then
 					apps_suffix="v"
 					apps_script=''
