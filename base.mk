@@ -45,7 +45,7 @@ PRODUCT_COPY_FILES += \
 #   Provide default libnfc-nci.conf file for devices that does not have one in
 #   vendor/etc
 PRODUCT_COPY_FILES += \
-	device/phh/treble/nfc/libnfc-nci.conf:system/etc/libnfc-nci.conf
+    device/generic/common/nfc/libnfc-nci.conf:system/etc/libnfc-nci.conf
 
 # LineageOS build may need this to make NFC work
 PRODUCT_PACKAGES += \
